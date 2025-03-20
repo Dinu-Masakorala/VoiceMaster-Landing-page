@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-dark-900 text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-primary text-black font-medium rounded-md hover:bg-opacity-90 transition-all;
+  }
+  
+  .nav-link {
+    @apply hover:bg-dark-700 px-3 py-2 rounded-md transition-all;
+  }
+} 
